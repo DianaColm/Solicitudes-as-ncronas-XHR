@@ -15,7 +15,7 @@ form.addEventListener('submit', function(e) {
 //funcion que contiene la API KEY
 function getNews() {
   const articleRequest = new XMLHttpRequest();
-  articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=b94f1606546b4aceb4324f41b0b56c7d`)
+  articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=b94f1606546b4aceb4324f41b0b56c7d`);
   articleRequest.onload = addNews;
   articleRequest.onerror = handleError;
   articleRequest.send();
